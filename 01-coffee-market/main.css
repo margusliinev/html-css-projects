@@ -84,6 +84,13 @@ body {
     color: white;
     letter-spacing: 2px;
     animation: slideFromBottom 3s ease-in-out;
+    transition: all 0.2s linear;
+}
+
+.hero-btn:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    color: black;
 }
 
 @keyframes slideFromTop {
