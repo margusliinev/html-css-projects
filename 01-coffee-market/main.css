@@ -24,18 +24,18 @@ body {
     z-index: 5;
 }
 
+.nav-center {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
 .nav-title {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
     letter-spacing: 2px;
-}
-
-.nav-center {
-    width: 90vw;
-    max-width: 1170px;
-    margin: 0 auto;
 }
 
 /* HERO */
@@ -72,6 +72,10 @@ body {
     max-width: 35em;
 }
 
+.hero-text {
+    animation: slideFromTop 3s ease-in-out;
+}
+
 .hero-btn {
     background: transparent;
     border: 1px solid white;
@@ -79,6 +83,29 @@ body {
     text-transform: uppercase;
     color: white;
     letter-spacing: 2px;
+    animation: slideFromBottom 3s ease-in-out;
+}
+
+@keyframes slideFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media screen and (min-width: 768px) {
