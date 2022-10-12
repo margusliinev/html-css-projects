@@ -38,6 +38,14 @@ body {
     letter-spacing: 2px;
 }
 
+.nav-icon {
+    color: white;
+    transform: scale(1.6);
+    margin-left: 10px;
+    position: relative;
+    bottom: 7px;
+}
+
 /* HERO */
 /* ==================================================================================================== */
 
