@@ -1,6 +1,23 @@
 /* GLOBAL STYLES & IMPORTS */
 /* ==================================================================================================== */
 
+:root {
+    --colorPrimary: #645cff;
+    --colorPrimaryDark: #3c3799;
+    --colorGrey: #64748b;
+    --colorGreyLight: #f1f5f9;
+    --colorGreyDark: #0f172a;
+    --black: #222;
+    --white: #fff;
+    --fluid-width: 90vw;
+    --max-width: 1170px;
+    --letter-spacing: 2px;
+    --border-radius: 0.15rem;
+    --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.3);
+    --shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.5);
+    --transition: 0.3s ease-in-out all;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +27,13 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.5;
+    background: rgb(105, 62, 27);
 }
 
 img {
     width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 /* NAVIGATION */
@@ -21,7 +41,7 @@ img {
 
 .nav {
     height: 5rem;
-    background-color: #222;
+    background-color: var(--black);
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -135,6 +155,71 @@ img {
 
 /* BLOGS */
 /* ==================================================================================================== */
+
+.blogs {
+    padding: 2rem 0;
+    color: #222;
+    background: var(--white);
+}
+
+.section-title {
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: var(--letter-spacing);
+    margin-bottom: 2rem;
+}
+
+.blogs-center {
+    width: var(--fluid-width);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.blog {
+    background: var(--white);
+    padding: 0.75rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-light);
+    transition: 0.1s all linear;
+}
+
+.blog:hover {
+    box-shadow: var(--shadow-dark);
+}
+
+.blog-img {
+    border-radius: var(--border-radius);
+    margin-bottom: 0.5rem;
+}
+
+.blog-content {
+    padding-bottom: 1rem;
+}
+
+.blog-content span {
+    text-transform: uppercase;
+    color: var(--colorPrimary);
+    letter-spacing: var(--letter-spacing);
+    font-weight: 500;
+}
+
+.blog-content h3 {
+    text-transform: capitalize;
+    letter-spacing: var(--letter-spacing);
+}
+
+.blog-content p {
+    color: var(--colorGrey);
+    margin-bottom: 0.5rem;
+}
+
+.blog-content a {
+    text-transform: capitalize;
+    color: var(--colorPrimaryDark);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
 
 /* END */
 /* ==================================================================================================== */
