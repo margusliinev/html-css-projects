@@ -156,7 +156,7 @@ img {
 /* ==================================================================================================== */
 
 .blogs {
-    padding: 2rem 0;
+    padding: 3rem 0;
     color: #222;
     background: var(--white);
 }
@@ -172,6 +172,9 @@ img {
     width: var(--fluid-width);
     max-width: 600px;
     margin: 0 auto;
+    content: '';
+    clear: both;
+    display: table;
 }
 
 .blog {
@@ -181,6 +184,7 @@ img {
     margin-bottom: 2rem;
     box-shadow: var(--shadow-light);
     transition: 0.1s all linear;
+    position: relative;
 }
 
 .blog:hover {
@@ -235,5 +239,6 @@ img {
         max-width: 300px;
     }
 }
+
 /* END */
 /* ==================================================================================================== */
