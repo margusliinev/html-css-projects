@@ -1,0 +1,71 @@
+/* GLOBAL STYLES & IMPORTS */
+/* ==================================================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel');
+
+:root {
+    --colorPrimary: #678e3e;
+    --colorPrimaryLight: #beed8c;
+    --colorGrey1: #102a42;
+    --colorGrey5: #617d98;
+    --colorGrey10: #f1f5f8;
+    --ffPrimary: 'Catamaran', sans-serif;
+    --ffSecondary: 'Grand Hotel', cursive;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: var(--ffPrimary);
+    background: white;
+    color: var(--colorGrey1);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.5rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.5rem;
+}
+h5 {
+    font-size: 2rem;
+}
+h6 {
+    font-size: 1.5rem;
+}
+
+/* NAVIGATION */
+/* ==================================================================================================== */
