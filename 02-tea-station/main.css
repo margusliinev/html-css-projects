@@ -132,5 +132,10 @@ h6 {
     }
 }
 
+.content-divider {
+    height: 0.5rem;
+    background: linear-gradient(to left, var(--colorPrimary), #e9b949);
+}
+
 /* END */
 /* ==================================================================================================== */
