@@ -11,7 +11,7 @@
     --colorGrey10: #f1f5f8;
     --ffPrimary: 'Catamaran', sans-serif;
     --ffSecondary: 'Grand Hotel', cursive;
-    --transition: all 0.1s linear;
+    --transition: all 0.2s linear;
     --spacing: 0.25rem;
     --radius: 0.5rem;
 }
@@ -128,12 +128,12 @@ h6 {
 }
 
 @media screen and (max-width: 800px) {
-    h1 {
+    .header-center h1 {
         font-size: 3rem;
         max-width: 300px;
         margin: 0 auto;
     }
-    h2 {
+    .header-center h2 {
         font-size: 2.5rem;
         min-width: 300px;
     }
@@ -194,6 +194,88 @@ h6 {
 @media screen and (min-width: 1200px) {
     .skill {
         width: 25%;
+    }
+}
+
+/* ABOUT */
+/* ==================================================================================================== */
+
+.about-title h5 {
+    font-family: var(--ffSecondary);
+    color: var(--colorPrimary);
+}
+
+.about-title h4 {
+    margin-bottom: 1rem;
+}
+
+.about-center {
+    padding: 4rem 0;
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.about-img,
+.about-info {
+    padding: 2rem 0;
+}
+
+.about-picture-container {
+    background: var(--colorPrimary);
+    border: 0.5rem solid var(--colorPrimary);
+    max-width: 32rem;
+    overflow: hidden;
+}
+
+.about-picture {
+    transition: var(--transition);
+}
+
+.about-picture-container:hover .about-picture {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.about-text {
+    max-width: 26rem;
+    color: var(--colorGrey5);
+    margin-bottom: 1rem;
+}
+
+.about-btn {
+    text-transform: uppercase;
+    background-color: var(--colorPrimary);
+    color: white;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    font-weight: 700;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+}
+
+.about-btn:hover {
+    color: var(--colorPrimary);
+    background: var(--colorPrimaryLight);
+}
+
+@media screen and (min-width: 992px) {
+    .about-center {
+        width: 95vw;
+        padding: 4rem 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about-img,
+    .about-info {
+        float: left;
+        width: 50%;
+    }
+    .about-info {
+        padding-left: 2rem;
     }
 }
 
