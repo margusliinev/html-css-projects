@@ -488,5 +488,113 @@ h6 {
     }
 }
 
+/* CONTACT */
+/* ==================================================================================================== */
+
+.contact {
+    background: var(--colorGrey10);
+    padding: 4rem 0;
+}
+
+.contact-center {
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.contact-form,
+.contact-info {
+    margin: 1rem 0;
+}
+
+.contact-item {
+    margin-bottom: 1.75rem;
+}
+
+.contact-title {
+    color: var(--colorPrimary);
+    font-weight: 400;
+}
+
+.contact-text {
+    text-transform: uppercase;
+}
+
+.contact-form {
+    background: white;
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    max-width: 35rem;
+}
+
+.contact-form:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h3 {
+    padding-top: 1.25rem;
+    color: var(--colorGrey5);
+}
+
+.form-group {
+    padding: 1rem 1.5rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    margin-bottom: 1.25rem;
+    background-color: var(--colorGrey10);
+    border-radius: var(--radius);
+    letter-spacing: 0.1rem;
+}
+
+.form-control::placeholder {
+    font-family: var(--ffPrimary);
+    color: var(--colorGrey1);
+    text-transform: uppercase;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    text-transform: uppercase;
+    background-color: var(--colorPrimary);
+    color: white;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    font-weight: 700;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    color: var(--colorPrimary);
+    background: var(--colorPrimaryLight);
+}
+
+@media screen and (min-width: 992px) {
+    .contact-center {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .contact-info {
+        transform: translateY(10%);
+    }
+    .contact-info,
+    .contact-form {
+        float: left;
+        width: 50%;
+    }
+}
+
 /* END */
 /* ==================================================================================================== */
