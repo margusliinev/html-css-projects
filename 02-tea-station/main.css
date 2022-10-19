@@ -12,7 +12,7 @@
     --ffPrimary: 'Catamaran', sans-serif;
     --ffSecondary: 'Grand Hotel', cursive;
     --transition: all 0.2s linear;
-    --spacing: 0.25rem;
+    --spacing: 0.2rem;
     --radius: 0.5rem;
 }
 
@@ -200,6 +200,13 @@ h6 {
 /* ABOUT */
 /* ==================================================================================================== */
 
+.about-center {
+    padding: 4rem 0;
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
 .about-title h5 {
     font-family: var(--ffSecondary);
     color: var(--colorPrimary);
@@ -207,13 +214,6 @@ h6 {
 
 .about-title h4 {
     margin-bottom: 1rem;
-}
-
-.about-center {
-    padding: 4rem 0;
-    width: 85vw;
-    margin: 0 auto;
-    max-width: 1170px;
 }
 
 .about-img,
@@ -276,6 +276,100 @@ h6 {
     }
     .about-info {
         padding-left: 2rem;
+    }
+}
+
+/* PRODUCTS */
+/* ==================================================================================================== */
+
+.products {
+    background: var(--colorGrey10);
+}
+
+.products-center {
+    padding: 4rem 0;
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.products-title h5 {
+    font-family: var(--ffSecondary);
+    color: var(--colorPrimary);
+}
+
+.products-title h4 {
+    margin-bottom: 1rem;
+}
+
+.products article {
+    padding: 2rem 0;
+}
+
+.product-text {
+    color: var(--colorGrey5);
+    max-width: 26rem;
+    margin-bottom: 1rem;
+}
+
+.products-btn {
+    text-transform: uppercase;
+    background-color: var(--colorPrimary);
+    color: white;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    font-weight: 700;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+}
+
+.products-btn:hover {
+    color: var(--colorPrimary);
+    background: var(--colorPrimaryLight);
+}
+
+.product {
+    margin-bottom: 2rem;
+}
+
+.product-img {
+    border-radius: var(--radius);
+    margin-bottom: 2rem;
+    height: 18rem;
+    object-fit: cover;
+}
+
+.product-price {
+    color: var(--colorPrimary);
+}
+
+@media screen and (min-width: 768px) {
+    .product {
+        float: left;
+        width: 50%;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .product {
+        width: 33.33%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .products-info {
+        float: left;
+        width: 30%;
+    }
+    .products-inventory {
+        float: left;
+        width: 70%;
+    }
+    .product {
+        padding: 0 1rem;
     }
 }
 
