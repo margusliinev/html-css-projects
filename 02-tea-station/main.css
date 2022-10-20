@@ -599,5 +599,46 @@ h6 {
 /* FOOTER */
 /* ==================================================================================================== */
 
+.footer {
+    background: #222;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.footer-center {
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    color: var(--colorPrimary);
+}
+
+.footer-text {
+    margin-top: 1.25rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+}
+
+.company {
+    color: var(--colorPrimary);
+}
+
+@media screen and (max-width: 768px) {
+    .footer-text {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
 /* END */
 /* ==================================================================================================== */
