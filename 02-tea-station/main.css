@@ -24,14 +24,21 @@
 
 body {
     line-height: 1.5;
+    font-weight: 400;
     font-family: var(--ffPrimary);
-    background: white;
+    background-color: white;
     color: var(--colorGrey1);
 }
 
 img {
     width: 100%;
     display: block;
+    object-fit: cover;
+}
+
+ol,
+ul {
+    list-style-type: none;
 }
 
 a {
@@ -158,14 +165,14 @@ h6 {
 }
 
 @media screen and (max-width: 800px) {
+    .header-center h2 {
+        font-size: 2.5rem;
+        min-width: 300px;
+    }
     .header-center h1 {
         font-size: 3rem;
         max-width: 300px;
         margin: 0 auto;
-    }
-    .header-center h2 {
-        font-size: 2.5rem;
-        min-width: 300px;
     }
 }
 
