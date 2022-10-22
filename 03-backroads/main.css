@@ -130,7 +130,7 @@ h6 {
 }
 
 .header-banner p {
-    max-width: 39rem;
+    max-width: 45rem;
     margin: 0 auto;
     color: white;
     letter-spacing: var(--spacing);
@@ -151,10 +151,16 @@ h6 {
 }
 
 @media screen and (max-width: 900px) {
+    .header-banner {
+        padding: 0 2rem;
+    }
     .header-banner p {
         max-width: 27rem;
     }
 }
+
+/* ABOUT */
+/* ==================================================================================================== */
 
 /* END */
 /* ==================================================================================================== */
