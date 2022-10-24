@@ -434,5 +434,54 @@ h6 {
     }
 }
 
+/* GALLERY */
+/* ==================================================================================================== */
+
+.gallery-img-container {
+    position: relative;
+    background: var(--colorPrimary5);
+}
+
+.gallery-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.gallery-img {
+    height: 17rem;
+    transition: var(--transition);
+}
+
+.gallery-img-container:hover .gallery-img {
+    opacity: 0.5;
+}
+
+.gallery-img-container:hover .gallery-icon {
+    opacity: 1;
+}
+
+@media screen and (min-width: 600px) {
+    .gallery-center {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery-img-container {
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .gallery-img-container {
+        flex: 0 0 25%;
+    }
+}
+
 /* END */
 /* ==================================================================================================== */
