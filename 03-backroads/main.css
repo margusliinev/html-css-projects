@@ -138,6 +138,7 @@ h6 {
 }
 
 .nav {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -202,12 +203,12 @@ h6 {
         color: var(--colorPrimary5);
     }
     .nav-icon {
-        font-size: 1.5rem;
-        color: black;
+        font-size: 1.6rem;
+        color: var(--colorPrimary5);
         transition: all 0.1s linear;
     }
     .nav-icon:hover {
-        color: var(--colorPrimary5);
+        color: var(--colorPrimary1);
     }
     .nav-header {
         padding: 0;
@@ -595,8 +596,8 @@ h6 {
 .footer-link {
     color: white;
     text-transform: capitalize;
-    font-size: 1rem;
-    margin-right: 1rem;
+    font-size: 1.1rem;
+    margin-right: 0.8rem;
     letter-spacing: var(--spacing);
     transition: var(--transition);
 }
@@ -620,6 +621,12 @@ h6 {
     text-transform: capitalize;
     color: white;
     letter-spacing: var(--spacing);
+    transform: translateX(-10px);
+    font-size: 1.1rem;
+}
+
+.company {
+    color: var(--colorPrimary8);
 }
 
 /* END */
