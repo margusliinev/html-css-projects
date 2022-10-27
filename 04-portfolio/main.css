@@ -339,3 +339,63 @@ h6 {
 
 /* END */
 /* ==================================================================================================== */
+
+.services {
+    background: var(--colorGrey10);
+}
+
+.service {
+    background: white;
+    padding: 3rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: var(--radius);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.service-icon {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.service .underline {
+    width: 3rem;
+    height: 0.12rem;
+    transition: var(--transition);
+}
+
+.service-p {
+    transition: var(--transition);
+}
+
+.service:hover {
+    background: var(--colorPrimary5);
+    color: white;
+}
+
+.service:hover .underline {
+    background: white;
+}
+
+@media screen and (max-width: 768px) {
+    .services-center {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .services-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .services-center {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* END */
+/* ==================================================================================================== */
