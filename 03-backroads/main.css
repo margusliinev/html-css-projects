@@ -138,7 +138,8 @@ h6 {
 }
 
 .nav {
-    position: fixed;
+    height: 5rem;
+    display: flex;
     top: 0;
     left: 0;
     width: 100%;
@@ -226,7 +227,7 @@ h6 {
 /* ==================================================================================================== */
 
 .header-center {
-    min-height: 100vh;
+    min-height: calc(100vh - 5rem);
     background: var(--colorPrimary5);
     display: flex;
     justify-content: center;
