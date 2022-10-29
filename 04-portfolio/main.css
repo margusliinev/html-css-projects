@@ -792,5 +792,35 @@ h6 {
     }
 }
 
+/* FOOTER */
+/* ==================================================================================================== */
+
+.footer {
+    padding: 2rem;
+    background: #222;
+    display: grid;
+    place-items: center;
+}
+
+.footer .social-icons {
+    margin-bottom: 2rem;
+    display: grid;
+    justify-items: center;
+}
+
+.footer .social-icon {
+    color: var(--colorPrimary5);
+}
+
+.footer .social-icon:hover {
+    color: var(--colorPrimary10);
+}
+
+.footer p {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    color: var(--colorGrey5);
+}
+
 /* END */
 /* ==================================================================================================== */
