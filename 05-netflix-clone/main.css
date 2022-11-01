@@ -28,7 +28,7 @@ html {
 body {
     font-family: var(--ffPrimary);
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.25;
     background-color: black;
     color: white;
 }
@@ -130,8 +130,83 @@ h6 {
     }
 }
 
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 /* HEADER */
 /* ==================================================================================================== */
+
+.header {
+    height: 54vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(./images/background.jpg) center/cover no-repeat;
+    display: grid;
+    place-items: center;
+}
+
+.header-center {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.header-center h1,
+.header-center h2,
+.header-center h3 {
+    font-weight: 400;
+}
+
+.header-center h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.header-center h2,
+.header-center h3 {
+    font-size: 1.25rem;
+}
+
+.header-center h2 {
+    margin-bottom: 1rem;
+}
+
+.header-center h3 {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+
+.header-input {
+    font-size: 1rem;
+    padding: 0.9rem 0.7rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.1rem;
+    border: none;
+}
+
+.header-input:focus {
+    outline: none;
+    box-shadow: 0 0 10px blue;
+}
+
+.header-btn {
+    background-color: var(--colorPrimary);
+    color: white;
+    padding: 0.75rem 1.3rem;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    font-weight: 500;
+    border: none;
+}
+
+.arrow {
+    transform: translate(2px, 1px);
+}
 
 /* END */
 /* ==================================================================================================== */
