@@ -8,7 +8,7 @@
     --colorSecondary: #222;
     --ffPrimary: 'Roboto', sans-serif;
     --ffSecondary: 'Open Sans', sans-serif;
-    --transition: all 0.2s linear;
+    --transition: all 0.1s linear;
     --spacing: 0.2rem;
     --radius: 0.5rem;
     --shadowLight: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -136,15 +136,86 @@ h6 {
     max-width: 1200px;
 }
 
+/* NAVIGATION */
+/* ==================================================================================================== */
+
+.nav {
+    position: absolute;
+    height: 5rem;
+    width: 100%;
+}
+
+.nav-center {
+    width: 95vw;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.select-container {
+    position: relative;
+}
+
+.globe {
+    position: absolute;
+    transform: translate(50%, 50%);
+    font-size: 0.9rem;
+}
+
+select {
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    padding: 0.25rem 0.3rem;
+    padding-left: 1.3rem;
+}
+
+option {
+    color: white;
+    background: grey;
+}
+
+.nav-btn {
+    color: white;
+    background-color: var(--colorPrimary);
+    font-size: 1rem;
+    padding: 0.35rem 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.nav-btn:hover {
+    background-color: red;
+}
+
+.logo {
+    width: 25%;
+}
+
 /* HEADER */
 /* ==================================================================================================== */
 
 .header {
-    height: 54vh;
+    height: 55vh;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(./images/background.jpg) center/cover no-repeat;
     display: grid;
     place-items: center;
+    border-bottom: 8px solid #222;
 }
 
 .header-center {
@@ -202,6 +273,12 @@ h6 {
     border-radius: 0.2rem;
     font-weight: 500;
     border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.header-btn:hover {
+    background-color: red;
 }
 
 .arrow {
