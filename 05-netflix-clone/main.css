@@ -54,6 +54,10 @@ a {
     max-width: 1200px;
 }
 
+.section {
+    border-bottom: 8px solid #222;
+}
+
 /* NAVIGATION */
 /* ==================================================================================================== */
 
@@ -133,7 +137,6 @@ option {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(./images/background.jpg) center/cover no-repeat;
     display: grid;
     place-items: center;
-    border-bottom: 8px solid #222;
 }
 
 .header-center {
@@ -298,6 +301,46 @@ option {
         width: 14rem;
         padding-left: 0;
     }
+}
+
+/* TV */
+/* ==================================================================================================== */
+
+.section-tv {
+    padding: 3.5rem 0 2rem 0;
+    margin: 0 auto;
+}
+
+.section-tv h1,
+.section-tv h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.section-tv h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-tv h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.tv-img-container {
+    transform: translateY(-30px);
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.video-tv {
+    position: absolute;
+    top: 21%;
+    left: 13%;
+    z-index: -2;
 }
 
 /* END */
