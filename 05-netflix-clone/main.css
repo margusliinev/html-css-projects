@@ -436,7 +436,7 @@ option {
 
 .banner-img-container {
     width: 14%;
-    margin-left: 0.5rem;
+    margin-left: 0.8rem;
 }
 
 .download-banner-text {
@@ -450,6 +450,31 @@ option {
 .download-banner-text p {
     font-size: 0.75rem;
     color: #0071eb;
+}
+
+@media screen and (min-width: 550px) {
+    .section-mobile h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        max-width: 1000px;
+        width: 85vw;
+    }
+    .section-mobile h2 {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .download-banner {
+        gap: 1.5rem;
+    }
+    .download-banner-text h6 {
+        font-size: 1.1rem;
+    }
+
+    .download-banner-text p {
+        font-size: 0.9rem;
+        color: #0071eb;
+    }
 }
 
 /* END */
