@@ -154,7 +154,6 @@ option {
     font-size: 1.75rem;
     margin-bottom: 1rem;
     line-height: 1;
-    font-weight: 500;
 }
 
 .header-center h2,
@@ -317,7 +316,7 @@ option {
 .section-tv h1,
 .section-tv h2 {
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .section-tv h1 {
@@ -378,6 +377,79 @@ option {
     .tv-title h2 {
         font-size: 1.5rem;
     }
+}
+
+/* MOBILE */
+/* ==================================================================================================== */
+
+.section-mobile {
+    padding: 3.5rem 0 2rem 0;
+    margin: 0 auto;
+}
+
+.mobile-center {
+    width: 95vw;
+}
+
+.section-mobile h1,
+.section-mobile h2 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.section-mobile h1 {
+    font-size: 1.6rem;
+    max-width: 430px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.section-mobile h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.mobile-img-container {
+    transform: translateY(-20px);
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 85vw;
+}
+
+.download-banner {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 70%;
+    height: 22%;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%);
+    background: #000;
+    border: 2px solid hsla(0, 0%, 100%, 0.25);
+    border-radius: 0.6rem;
+    gap: 1rem;
+}
+
+.banner-img-container {
+    width: 14%;
+    margin-left: 0.5rem;
+}
+
+.download-banner-text {
+    display: grid;
+}
+
+.download-banner-text h6 {
+    font-size: 0.95rem;
+}
+
+.download-banner-text p {
+    font-size: 0.75rem;
+    color: #0071eb;
 }
 
 /* END */
