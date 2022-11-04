@@ -154,6 +154,7 @@ option {
     font-size: 1.75rem;
     margin-bottom: 1rem;
     line-height: 1;
+    font-weight: 500;
 }
 
 .header-center h2,
@@ -322,6 +323,7 @@ option {
 .section-tv h1 {
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
+    font-weight: 500;
 }
 
 .section-tv h2 {
@@ -402,11 +404,11 @@ option {
     max-width: 430px;
     margin: 0 auto;
     margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 .section-mobile h2 {
     font-size: 1.2rem;
-    font-weight: 400;
 }
 
 .mobile-img-container {
@@ -453,15 +455,15 @@ option {
 }
 
 @media screen and (min-width: 550px) {
+    .mobile-center {
+        width: 90vw;
+    }
     .section-mobile h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
-        font-weight: 500;
         max-width: 1000px;
-        width: 85vw;
     }
     .section-mobile h2 {
-        width: 80vw;
         margin: 0 auto;
     }
     .download-banner {
@@ -474,6 +476,41 @@ option {
     .download-banner-text p {
         font-size: 0.9rem;
         color: #0071eb;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .section-mobile {
+        padding: 3rem 0 4rem 0;
+    }
+    .mobile-center {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        gap: 5rem;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    .mobile-img-container {
+        flex: 1 1 50%;
+        max-width: 500px;
+        transform: translate(-50px, -10px);
+    }
+    .mobile-title {
+        flex: 1 1 50%;
+        transform: translate(-40px, 0);
+    }
+    .mobile-title h1,
+    .mobile-title h2 {
+        text-align: left;
+        max-width: 500px;
+    }
+    .mobile-title h1 {
+        font-size: 3rem;
+    }
+    .mobile-title h2 {
+        font-size: 1.5rem;
     }
 }
 
