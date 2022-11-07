@@ -669,7 +669,7 @@ option {
 
 .contact-center {
     width: 80vw;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -723,11 +723,30 @@ option {
     color: #999;
 }
 
+.contact-select-container option {
+    color: #999;
+    background: black;
+}
+
 .page-language {
     color: #737373;
     text-align: left;
     margin-top: 1.5rem;
     font-size: 0.875rem;
+}
+
+@media screen and (min-width: 550px) {
+    .contact-links {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 0.75rem;
+    }
+}
+
+@media screen and (min-width: 740px) {
+    .contact-links {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 0.75rem;
+    }
 }
 
 /* END */
