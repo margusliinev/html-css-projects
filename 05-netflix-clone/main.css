@@ -523,11 +523,12 @@ option {
     text-align: center;
 }
 
-.faq-cta h2 {
+.section-faq h2 {
     text-align: center;
     font-weight: 400;
     font-size: 1.2rem;
     margin: 0 auto 0.5rem auto;
+    width: 70vw;
 }
 
 .faq-input {
@@ -587,7 +588,7 @@ option {
 }
 
 @media screen and (min-width: 740px) {
-    .faq-cta h2 {
+    .section-faq h2 {
         font-size: 1.5rem;
     }
     .faq-input {
@@ -596,8 +597,66 @@ option {
 }
 
 @media screen and (min-width: 950px) {
+    .section-faq {
+        padding-bottom: 6rem;
+    }
+    .faq-center {
+        width: 80vw;
+    }
     .faq-title h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
+        margin-bottom: 2.6rem;
+    }
+    .questions {
+        width: 70vw;
+        margin: 0 auto;
+        margin-bottom: 4.5rem;
+        max-width: 800px;
+    }
+    .question p {
+        font-size: 1.6rem;
+    }
+    .expand {
+        font-size: 1.9rem;
+    }
+    .question {
+        padding: 1.3rem 1.5rem;
+    }
+    .section-faq h2 {
+        max-width: 700px;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .faq-cta {
+        max-width: 700px;
+        display: flex;
+        justify-content: center;
+    }
+    .faq-input {
+        margin: 0;
+        max-width: 480px;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        padding: 1rem 0.9rem;
+    }
+    .faq-btn {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .faq-cta {
+        max-width: 800px;
+    }
+    .faq-input {
+        padding: 1.5rem 1rem;
+        max-width: 500px;
+    }
+    .faq-btn {
+        font-size: 1.8rem;
     }
 }
 
