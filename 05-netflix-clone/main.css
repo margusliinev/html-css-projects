@@ -474,7 +474,7 @@ option {
 /* FAQ */
 /* ==================================================================================================== */
 
-.section-faq {
+.faq {
     padding: 3rem 0;
     border-bottom: 8px solid #222;
 }
@@ -523,7 +523,7 @@ option {
     text-align: center;
 }
 
-.section-faq h2 {
+.faq h2 {
     text-align: center;
     font-weight: 400;
     font-size: 1.2rem;
@@ -565,7 +565,7 @@ option {
 }
 
 @media screen and (min-width: 550px) {
-    .section-faq {
+    .faq {
         padding: 4rem 0;
     }
     .faq-title h1 {
@@ -588,7 +588,7 @@ option {
 }
 
 @media screen and (min-width: 740px) {
-    .section-faq h2 {
+    .faq h2 {
         font-size: 1.5rem;
     }
     .faq-input {
@@ -597,7 +597,7 @@ option {
 }
 
 @media screen and (min-width: 950px) {
-    .section-faq {
+    .faq {
         padding-bottom: 6rem;
     }
     .faq-center {
@@ -622,7 +622,7 @@ option {
     .question {
         padding: 1.3rem 1.5rem;
     }
-    .section-faq h2 {
+    .faq h2 {
         max-width: 700px;
         font-size: 1.2rem;
         margin-bottom: 1rem;
