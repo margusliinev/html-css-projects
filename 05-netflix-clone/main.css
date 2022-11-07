@@ -517,18 +517,17 @@ option {
     font-size: 1.5rem;
 }
 
-.faq-center h2 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.2rem;
-    width: 65vw;
-    margin: 0 auto 0.5rem auto;
-}
-
 .faq-cta {
     width: 85vw;
     margin: 0 auto;
     text-align: center;
+}
+
+.faq-cta h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0 auto 0.5rem auto;
 }
 
 .faq-input {
@@ -565,18 +564,40 @@ option {
 }
 
 @media screen and (min-width: 550px) {
+    .section-faq {
+        padding: 4rem 0;
+    }
     .faq-title h1 {
         font-size: 2.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .faq-center {
+        width: 75vw;
+        margin: 0 auto;
+    }
+    .question {
+        padding: 1rem;
+    }
+    .questions {
+        row-gap: 0.6rem;
+    }
+    .faq-cta {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 740px) {
+    .faq-cta h2 {
+        font-size: 1.5rem;
+    }
+    .faq-input {
+        padding-top: 1.5rem;
     }
 }
 
 @media screen and (min-width: 950px) {
     .faq-title h1 {
         font-size: 3rem;
-    }
-    .faq-title h2 {
-        font-size: 1.5rem;
     }
 }
 
