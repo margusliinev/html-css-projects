@@ -9,8 +9,6 @@
     --ffPrimary: 'Roboto', sans-serif;
     --ffSecondary: 'Open Sans', sans-serif;
     --transition: all 0.1s linear;
-    --spacing: 0.2rem;
-    --radius: 0.5rem;
 }
 
 * {
@@ -159,7 +157,7 @@ a {
 }
 
 select {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.4);
     color: white;
     font-size: 1rem;
     padding: 0.25rem 0.3rem;
@@ -212,6 +210,12 @@ option {
 }
 
 @media screen and (min-width: 950px) {
+    .nav-center {
+        width: 95vw;
+    }
+    .nav-header {
+        transform: translate(0, -10%);
+    }
     .logo-container {
         width: 12rem;
     }
