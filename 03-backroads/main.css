@@ -24,7 +24,6 @@
     --colorGrey8: hsl(210, 31%, 80%);
     --colorGrey9: hsl(212, 33%, 89%);
     --colorGrey10: hsl(210, 36%, 96%);
-    --ffPrimary: 'Lato', sans-serif;
     --transition: all 0.2s linear;
     --spacing: 0.2rem;
     --radius: 0.5rem;
@@ -41,7 +40,7 @@
 body {
     line-height: 1.5;
     font-weight: 400;
-    font-family: var(--ffPrimary);
+    font-family: 'Lato', sans-serif;
     background-color: white;
     color: var(--colorGrey1);
 }
@@ -501,7 +500,6 @@ h6 {
 }
 
 .submit-btn {
-    font-family: var(--ffPrimary);
     margin-left: 0.5rem;
     background: var(--colorPrimary8);
     color: var(--colorPrimary1);
