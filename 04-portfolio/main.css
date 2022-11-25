@@ -149,6 +149,7 @@ h6 {
 }
 
 .nav {
+    position: absolute;
     height: 5rem;
     width: 100%;
     padding: 1rem;
@@ -198,6 +199,7 @@ h6 {
         text-transform: capitalize;
         color: var(--colorGrey1);
         font-weight: 600;
+        font-size: 1.1rem;
         letter-spacing: var(--spacing);
         transition: var(--transition);
     }
@@ -228,7 +230,7 @@ h6 {
 }
 
 .header-center {
-    min-height: calc(100vh - 5rem);
+    min-height: 100vh;
     display: grid;
     place-items: center;
 }
@@ -244,7 +246,7 @@ h6 {
     display: grid;
     width: 20rem;
     grid-template-columns: repeat(5, 1fr);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .social-icon {
@@ -339,7 +341,7 @@ h6 {
     }
 }
 
-/* END */
+/* SERVICES */
 /* ==================================================================================================== */
 
 .services {
