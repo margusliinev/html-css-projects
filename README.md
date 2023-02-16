@@ -8,7 +8,6 @@ This is a repository for projects built with HTML & CSS.
 
 -   HTML
 -   CSS
--   Font-Awesome Library
 
 ## Projects
 
